@@ -23,7 +23,7 @@ const workerConfig = {
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
       target: 'liuu.org',
-      tooltip: 'Kenneth's Blog',
+      tooltip: 'Kenneth Blog',
       statusPageLink: 'https://liuu.org',
       timeout: 5000,
     },
