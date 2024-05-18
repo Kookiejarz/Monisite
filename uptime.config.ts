@@ -34,7 +34,7 @@ const workerConfig = {
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
       target: 'dl.btlcraft.top',
-      tooltip: 'Kenneth's Blog',
+      tooltip: 'DATABASE',
       statusPageLink: 'https://dl.btlcraft.top',
       timeout: 5000,
     },
