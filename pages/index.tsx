@@ -71,8 +71,8 @@ export default function Home({
         <Text size="xs" mt="xs" mb="xs" style={{
           textAlign: 'center'
         }}>
-          Open-source monitoring and status page powered by{' '}
-          <a href="https://github.com/lyc8503/UptimeFlare" target="_blank">
+          Open-source monitoring and status page{' '}
+          <a href="https://github.com/Kookiejarz" target="_blank">
             Uptimeflare
           </a>{' '}
           and{' '}
@@ -80,7 +80,7 @@ export default function Home({
             Cloudflare
           </a>
           , made with ❤ by{' '}
-          <a href="https://github.com/lyc8503" target="_blank">
+          <a href="https://liuu.org" target="_blank">
             lyc8503
           </a>
           .
