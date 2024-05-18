@@ -15,47 +15,73 @@ const workerConfig = {
   // Define all your monitors here
   monitors: [
     // Example HTTP Monitor
-    // Example TCP Monitor
     {
+      // `id` should be unique, history will be kept if the `id` remains constant
       id: 'Blog',
+      // `name` is used at status page and callback message
       name: 'Blog',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'TCP_PING',
-      // `target` should be `host:port` for tcp monitors
-      target: 'liuu.org',
+      // `method` should be a valid HTTP Method
+      method: 'POST',
+      // `target` is a valid URL
+      target: 'https://liuu.org',
+      // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
       tooltip: 'Kenneth Blog',
+      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
       statusPageLink: 'https://liuu.org',
-      timeout: 5000,
+      // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
+      expectedCodes: [200],
+      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
+      timeout: 10000,
+      // [OPTIONAL] headers to be sent
     },
     {
-      id: 'DATABASE',
-      name: 'DATABASE',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'TCP_PING',
-      // `target` should be `host:port` for tcp monitors
-      target: 'dl.btlcraft.top',
-      tooltip: 'DATABASE',
-      statusPageLink: 'https://dl.btlcraft.top',
-      timeout: 5000,
+      // `id` should be unique, history will be kept if the `id` remains constant
+      id: 'AI Search',
+      // `name` is used at status page and callback message
+      name: 'Search',
+      // `method` hould be a valid HTTP Method
+      method: 'POST',
+      // `target` is a valid URL
+      target: 'https://search.liuu.org',
+      // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
+      tooltip: 'AI Search',
+      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
+      statusPageLink: 'https://search.liuu.org',
+      // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
+      expectedCodes: [200],
+      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
+      timeout: 10000,
+      // [OPTIONAL] headers to be sent
     },
     {
       id: 'HK',
-      name: 'Hong Kong',
+      name: '[NODE] Hong Kong',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: 'hk.btlcraft.top',
+      target: '18.162.173.170:443',
       tooltip: 'Hong Kong',
     //statusPageLink: 'https://dl.btlcraft.top',
       timeout: 5000,
     },
     {
-      id: 'US',
-      name: 'United States',
+      id: 'SG',
+      name: '[NODE] Singapore',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: 'us-west.btlcraft.top',
+      target: '175.41.157.111:444',
+      tooltip: 'Singapore',
+    //statusPageLink: 'https://dl.btlcraft.top',
+      timeout: 5000,
+    },
+    {
+      id: 'US',
+      name: '[NODE] United States',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'TCP_PING',
+      // `target` should be `host:port` for tcp monitors
+      target: '52.52.56.55:443',
       tooltip: 'United States',
     //statusPageLink: 'https://us-west.btlcraft.top',
       timeout: 5000,
