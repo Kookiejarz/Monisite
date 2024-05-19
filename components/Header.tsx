@@ -23,7 +23,7 @@ export default function Header() {
         <div>
           <a href="https://github.com/Kookiejarz/Monisite" target="_blank">
             <Text size="xl" span>
-              🔭 
+              🔭\t
             </Text>
             <Text
               size="xl"
