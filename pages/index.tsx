@@ -79,9 +79,9 @@ export default function Home({
           <a href="https://www.cloudflare.com/" target="_blank">
             Cloudflare
           </a>
-          , made with ❤ by{' '}
+          , deployed with ❤ by{' '}
           <a href="https://liuu.org" target="_blank">
-            lyc8503
+            Kenneth Liu
           </a>
           .
         </Text>
