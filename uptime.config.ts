@@ -85,7 +85,8 @@ const workerConfig = {
       tooltip: 'United States',
     //statusPageLink: 'https://us-west.btlcraft.top',
       timeout: 5000,
-      {
+    },
+    {
       id: 'US-OREGON',
       name: '[NODE] United States - OREGON',
       // `method` should be `TCP_PING` for tcp monitors
