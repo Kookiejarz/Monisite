@@ -85,7 +85,28 @@ const workerConfig = {
       tooltip: 'United States',
     //statusPageLink: 'https://us-west.btlcraft.top',
       timeout: 5000,
+      {
+      id: 'US-OREGON',
+      name: '[NODE] United States - OREGON',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'TCP_PING',
+      // `target` should be `host:port` for tcp monitors
+      target: '54.214.82.97:443',
+      tooltip: 'OREGON',
+    //statusPageLink: 'https://jp.btlcraft.top',
+      timeout: 5000,
     },
+    {
+      id: 'JP-Tokyo',
+      name: '[NODE] JAPAN',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'TCP_PING',
+      // `target` should be `host:port` for tcp monitors
+      target: '52.195.7.238:443',
+      tooltip: 'JAPAN',
+    //statusPageLink: 'https://jp.btlcraft.top',
+      timeout: 5000,
+    }
   ],
   callbacks: {
     onStatusChange: async (
