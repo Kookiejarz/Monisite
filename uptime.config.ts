@@ -59,7 +59,7 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: '43.198.66.33:443',
+      target: '18.163.86.8:443',
       tooltip: 'Hong Kong',
     //statusPageLink: 'https://dl.btlcraft.top',
       timeout: 5000,
@@ -70,7 +70,7 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: '47.128.84.144:447',
+      target: '3.1.136.160:447',
       tooltip: 'Singapore',
       //statusPageLink: 'https://dl.btlcraft.top',
       timeout: 5000,
